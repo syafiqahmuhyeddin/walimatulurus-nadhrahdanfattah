@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- TITLE -->
+  <title>WALIMATULURUS | Nadhrah dan Fattah</title>
+
+  <!-- WHATSAPP / FACEBOOK PREVIEW -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ms_MY">
+  <meta property="og:site_name" content="WALIMATULURUS">
+  <meta property="og:title" content="WALIMATULURUS">
+  <meta property="og:description" content="Nadhrah dan Fattah">
+  <meta property="og:url" content="https://walimatulurusnadhrahdanfattah.netlify.app/">
+
+  <!-- IMPORTANT: naikkan version kalau tukar gambar -->
+  <meta property="og:image" content="https://imgur.com/xUtkYEf.jpeg">
+  <meta property="og:image:secure_url" content="https://imgur.com/xUtkYEf.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WALIMATULURUS">
+  <meta name="twitter:description" content="Nadhrah dan Fattah">
+  <meta name="twitter:image" content="https://imgur.com/xUtkYEf.jpeg">
+
+  <style>
+    @font-face{
+      font-family:"Peristiwa";
+      src:url("./Peristiwa.otf") format("opentype");
+      font-weight:400;
+      font-style:normal;
+      font-display:swap;
+    }
+
+    :root{
+      --text:#fff;
+      --shadow:0 12px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+
+    body{
+      color:var(--text);
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      background:#000 url("./Cover.jpg") center/cover no-repeat fixed;
+    }
+
+    .overlay{
+      position:fixed;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.65), rgba(0,0,0,.85));
+    }
+
+    .wrap{
+      position:relative;
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px 16px;
+    }
+
+    .card{
+      text-align:center;
+      width:100%;
+      max-width:720px;
+      padding:64px 20px 28px;
+    }
+
+    .label{
+      font-size:.75rem;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      opacity:.85;
+      margin-bottom:10px;
+    }
+
+    h1{
+      margin:.4rem 0 .55rem;
+      font-size:clamp(2.6rem, 4vw + 1rem, 3.8rem);
+      font-family:"Peristiwa", cursive;
+      font-weight:400;
+      letter-spacing:.02em;
+      color:#ffffff;
+      text-shadow:0 2px 6px rgba(0,0,0,.45);
+    }
+
+    .subtitle{
+      font-size:.7rem;
+      letter-spacing:.08em;
+      opacity:.8;
+      margin-bottom:18px;
+    }
+
+    .date{
+      display:inline-block;
+      padding:.55rem 1rem;
+      border-radius:999px;
+      font-weight:600;
+      line-height:1.45;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow:var(--shadow);
+      font-size:.92rem;
+    }
+
+    .count{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:12px;
+      margin:20px auto 28px;
+      max-width:520px;
+    }
+
+    .box{
+      padding:14px 10px;
+      border-radius:var(--radius);
+      background:rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow:var(--shadow);
+    }
+
+    .num{font-size:1.6rem;font-weight:800}
+    .lbl{font-size:.75rem;opacity:.85}
+
+    .cta{
+      min-width:220px;
+      padding:14px 18px;
+      border-radius:999px;
+      font-weight:700;
+      font-size:1rem;
+      color:#fff;
+      cursor:pointer;
+      background:linear-gradient(135deg,#1f6f5c,#2e8b57,#3cb371);
+      border:none;
+      box-shadow:
+        0 8px 18px rgba(46,139,87,.45),
+        0 2px 6px rgba(0,0,0,.35);
+    }
+
+    .cta:active{transform:translateY(1px);}
+
+    footer{
+      margin-top:18px;
+      font-size:.78rem;
+      opacity:.8;
+    }
+
+    @media(max-width:480px){
+      h1{white-space:normal}
+      .date{font-size:.88rem;}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <audio id="bgm" src="./Musik.m4a" preload="auto" loop playsinline webkit-playsinline></audio>
+
+  <div class="wrap">
+    <main class="card">
+
+      <div class="label">WALIMATULURUS</div>
+      <h1>Nadhrah dan Fattah</h1>
+      <div class="subtitle">Menuju Hari Bahagia</div>
+
+      <p class="date">
+        ISNIN | 23 MAC 2026 | 12:00 TENGAH HARI<br>
+        CINTA LESTARI EVENTS HALL
+      </p>
+
+      <section class="count">
+        <div class="box"><div class="num" id="cd_days">00</div><div class="lbl">Hari</div></div>
+        <div class="box"><div class="num" id="cd_hours">00</div><div class="lbl">Jam</div></div>
+        <div class="box"><div class="num" id="cd_mins">00</div><div class="lbl">Minit</div></div>
+        <div class="box"><div class="num" id="cd_secs">00</div><div class="lbl">Saat</div></div>
+      </section>
+
+      <button class="cta" id="openBtn" type="button">Buka Undangan</button>
+
+      <footer>Terima Kasih atas kehadiran anda</footer>
+
+    </main>
+  </div>
+
+  <script>
+    (function(){
+      const audio = document.getElementById("bgm");
+      const btn   = document.getElementById("openBtn");
+      const CANVA_URL = "https://artbysyaf.my.canva.site/walimatulurus-nadhrahdanfattah";
+
+      const elDays  = document.getElementById("cd_days");
+      const elHours = document.getElementById("cd_hours");
+      const elMins  = document.getElementById("cd_mins");
+      const elSecs  = document.getElementById("cd_secs");
+
+      const targetTime = new Date("2026-03-23T12:00:00+08:00").getTime();
+      const pad2 = n => String(n).padStart(2, "0");
+
+      function updateCountdown(){
+        const now = Date.now();
+        let diff = targetTime - now;
+        if (diff < 0) diff = 0;
+
+        const totalSeconds = Math.floor(diff / 1000);
+        const days  = Math.floor(totalSeconds / 86400);
+        const hours = Math.floor((totalSeconds % 86400) / 3600);
+        const mins  = Math.floor((totalSeconds % 3600) / 60);
+        const secs  = totalSeconds % 60;
+
+        elDays.textContent  = days;
+        elHours.textContent = pad2(hours);
+        elMins.textContent  = pad2(mins);
+        elSecs.textContent  = pad2(secs);
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      btn.addEventListener("click", function(){
+        const w = window.open("about:blank", "_blank");
+
+        try{
+          audio.muted = false;
+          audio.volume = 1;
+          const p = audio.play();
+          if (p && typeof p.catch === "function") p.catch(function(){});
+          setTimeout(function(){ try{ audio.play(); }catch(e){} }, 250);
+        }catch(e){}
+
+        setTimeout(function(){
+          if (w) w.location.href = CANVA_URL;
+          else window.location.href = CANVA_URL;
+        }, 700);
+      });
+    })();
+  </script>
+
+</body>
+</html>
